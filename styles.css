@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#toggle{
+    position: relative;
+    display: block;
+    background: #222;
+    height: 160px;
+    width: 320px;
+    border-radius: 160px ;
+    transition: 1s;
+    box-shadow: inset 0 8px 60px rgba(0,0,0,.1),
+    inset 0 8px 8px rgba(0,0,0,.1),
+    inset 0 -4px 4px rgba(0,0,0,.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#toggle .button {
+    position:absolute;
+    height: 160px;
+    width: 160px;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom,#444,#222);
+    border-radius: 50%;
+    transform:scale(0.9);
+    box-shadow: 
+        0 8px 40px rgba(0,0,0,.5),
+        inset -5px 2px 8px rgba(255,255,255,.5);
+    transition: 1s;
+}
+
+#toggle i.active{
+    right: 160px;
+    box-shadow: 
+        0 8px 40px rgba(0,0,0,.5),
+        inset -5px 2px 4px rgba(255,255,255,0);
+    transition: 1s;
+}
+
+.dark-mode{
+    background: #222;
+}
+
